@@ -1,0 +1,76 @@
+.body{
+    background-color: rgb(200,173,0) ;
+    direction: ltr;
+  }
+  #sli{
+ width: 40%;
+
+ position: relative;
+ margin: 20px auto;
+ overflow: hidden;
+ box-shadow: 0 0 7px #333;
+  }
+  .slider img{
+ width: 100%;
+ 
+  }
+  .slider{
+    display: none;
+    height: 20%;
+    animation: fad 3s;
+  }
+  .slider.act{
+    display: block;
+  }
+ .text{
+     font-weight: bold;
+     font-size: 24px;
+   color: white;
+   position: absolute;
+   top: 85%;
+   left:0;
+   text-align: center;
+   width: 100%;
+ } 
+ .prev ,.next {
+   color: white;
+   text-decoration: none;
+   font-size: 40px;
+   position: absolute;
+   
+  top: 50%;
+  transform: translate(0,-50);
+ 
+   
+ 
+ }
+.next{
+    right:5px;
+}
+ .prev{
+   left: 5px;
+ }
+  .dot{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+ 
+  }
+  #dots{
+    text-align: center;
+  }
+  .active{
+      background-color: rgb(44, 44, 168);
+  }
+  @keyframes fad {
+    0%{
+      opacity: 0;
+
+    }
+    100%{
+      opacity: 1;
+    }
+    
+  }
