@@ -70,3 +70,18 @@ setInterval(function(){
   dot[n].classList.add("active");
 
 },3000)
+
+let login = document.getElementById("log");
+let btn = document.getElementById("btn");
+
+btn.addEventListener("click",function(){
+
+  login.classList.toggle("lg");
+})
+let log_exeit= document.getElementById("log2")
+
+log_exeit.addEventListener('click',function(){
+
+ login.classList.toggle("lg");
+ //login.classList.remove("lg")
+})
